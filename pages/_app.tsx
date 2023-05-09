@@ -18,10 +18,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <PersistGate loading={null} persistor={persistor}>
         <QueryClientProvider client={queryClient}>
             <Hydrate>
-                (<Component {...pageProps} />)
-                </Hydrate>
-            </QueryClientProvider>
-        </PersistGate>
+                <Component {...pageProps} />
+            </Hydrate>
+        </QueryClientProvider>
+    </PersistGate>
   )
 }
 
