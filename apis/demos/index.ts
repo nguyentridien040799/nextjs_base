@@ -1,4 +1,6 @@
 // import { DataResponse } from '@services/request.type';
+// import { get } from '@services/fetcher';
+// import { TGetListBanksResponse } from '@stores/banks/type';
 
 // const apiBanks = {
 //     async getListBanks(): Promise<DataResponse<TGetListBanksResponse | null>> {
