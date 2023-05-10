@@ -1,10 +1,19 @@
 import type { NextPage } from 'next'
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import ContainerWrapper from '../components/Layout/container-wrapper';
+import { getListDemos } from '@stores/demos/slice';
 
 const Home: NextPage = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getListDemos());
+}, []);
+
   return (
     <ContainerWrapper>
       <style jsx global>{`

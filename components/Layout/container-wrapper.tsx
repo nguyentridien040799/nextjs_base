@@ -10,7 +10,6 @@ const ContainerWrapper: FC<Props> = ({ children }) => {
     return (
         <div>
             <HeaderHomePage/>
-            <p>Đã được wrapper</p>
             {children}
             <FooterHomePage/>
         </div>
