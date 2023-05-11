@@ -1,9 +1,9 @@
 
 import { combineReducers } from '@reduxjs/toolkit';
-import demosReducer from './demos/slice';
+import homepageReducer from './homepage/slice';
 
 const rootReducer = combineReducers({
-    demos: demosReducer,
+    homepage: homepageReducer
 });
 
 export default rootReducer;

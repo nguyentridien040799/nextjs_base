@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import '../styles/homepage.css'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -9,11 +8,6 @@ import { QueryClientProvider, QueryClient, Hydrate } from 'react-query';
 
 const queryClient = new QueryClient();
 function MyApp({ Component, pageProps }: AppProps) {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    console.log('test')
-  }, []);
 
   return (
     <PersistGate loading={null} persistor={persistor}>
